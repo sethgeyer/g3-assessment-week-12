@@ -42,3 +42,10 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 end
+
+def create_a_movie(name)
+  fill_in "Name", with: name
+  fill_in "Year", with: "2012"
+  fill_in "Synopsis", with: "summary"
+  click_on "Create Movie"
+end
