@@ -1,4 +1,9 @@
 class MoviesController < ApplicationController
+
+  def index
+    @movies = Movie.all.order("year DESC")
+  end
+
   def new
     @movie = Movie.new
   end

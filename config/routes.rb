@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "sessions#index"
+  root "movies#index"
 
   resources :movies
 
